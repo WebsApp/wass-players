@@ -1,0 +1,30 @@
+<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="http://code4stack.com/wassplayer.css">
+<video id="wassplayer" controls data-poster="/path/to/poster.jpg">
+  <source src="https://vjs.zencdn.net/v/oceans.webm" type="video/webm" />
+
+  <!-- Captions are optional -->
+  <!-- <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default /> -->
+</video>
+
+<script src="http://code4stack.com/wassplayer.js"></script>
+<script>
+var controls =
+[
+    'autoplay',
+    'play-large',
+    'rewind',
+    'play',
+    'fast-forward',
+    'progress',
+    'current-time',
+    'mute',
+    'volume',
+    'captions',
+    'settings',
+    'fullscreen'
+];
+  const player = new WassPlayer('#wassplayer',{controls});
+
+  // console.log(player);
+</script>
